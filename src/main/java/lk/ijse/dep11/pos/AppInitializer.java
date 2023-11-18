@@ -5,13 +5,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lk.ijse.dep11.pos.db.SingleConnectionDataSource;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class AppInitializer extends Application {
 
     public static void main(String[] args) {
-        launch(args);
+
+        try (var instance = SingleConnectionDataSource.getInstance().getConnection()){
+            launch(args);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
@@ -19,7 +27,7 @@ public class AppInitializer extends Application {
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/MainForm.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
-        primaryStage.setTitle("");
+        primaryStage.setTitle("DailyMart");
         primaryStage.setResizable(false);
         primaryStage.centerOnScreen();
         primaryStage.show();
