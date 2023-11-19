@@ -27,7 +27,7 @@ public class AppInitializer extends Application {
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/MainForm.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
-        primaryStage.setTitle("DailyMart");
+        primaryStage.setTitle("iHerb");
         primaryStage.setResizable(false);
         primaryStage.centerOnScreen();
         primaryStage.show();

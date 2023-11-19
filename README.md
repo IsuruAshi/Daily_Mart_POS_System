@@ -1,4 +1,4 @@
-# Smart Point of Sale (POS) System
+# IHerb (POS) System
 
 ### License
 Copyright &copy; 2023 Isuru Ashinsana. All Rights Reserved. 
@@ -52,4 +52,4 @@ This Point of Sale (POS) system is a Java-based application developed using Java
 
 1. Clone the repository:
    ```bash
-   ### update this
+   https://github.com/IsuruAshi/iHerb_POS_System.git
