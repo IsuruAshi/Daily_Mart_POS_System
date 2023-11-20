@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.pos.controller.MainFormController">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ECF4D6;" styleClass="mainFxmlClass" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.pos.controller.MainFormController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="87.0" fitWidth="102.0" layoutX="253.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../asset/ijse-logo.gif" />
+            <Image url="@../asset/iHerb.png" />
          </image>
       </ImageView>
-      <Label layoutX="182.0" layoutY="76.0" text="SMART POINT of SALE SYSTEM">
+      <Label layoutX="179.0" layoutY="94.0" text="SMART POINT of SALE SYSTEM" textFill="#3a4d39">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
